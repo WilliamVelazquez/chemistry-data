@@ -1,0 +1,838 @@
+const elementSlot =
+{
+  values: [
+    {
+      id: 1,
+      name: {
+        value: 'Hidrógeno',
+        synonyms: ['Hydrogen']
+      }
+    },
+    {
+      id: 2,
+      name: {
+        value: 'Helio',
+        synonyms: ['Helium']
+      }
+    },
+    {
+      id: 3,
+      name: {
+        value: 'Litio',
+        synonyms: ['Lithium']
+      }
+    },
+    {
+      id: 4,
+      name: {
+        value: 'Berilio',
+        synonyms: ['Beryllium']
+      }
+    },
+    {
+      id: 5,
+      name: {
+        value: 'Boro',
+        synonyms: ['Boron']
+      }
+    },
+    {
+      id: 6,
+      name: {
+        value: 'Carbono',
+        synonyms: ['Carbon']
+      }
+    },
+    {
+      id: 7,
+      name: {
+        value: 'Nitrógeno',
+        synonyms: ['Nitrogen']
+      }
+    },
+    {
+      id: 8,
+      name: {
+        value: 'Oxígeno',
+        synonyms: ['Oxygen']
+      }
+    },
+    {
+      id: 9,
+      name: {
+        value: 'Flúor',
+        synonyms: ['Fluorine']
+      }
+    },
+    {
+      id: 10,
+      name: {
+        value: 'Neón',
+        synonyms: ['Neon']
+      }
+    },
+    {
+      id: 11,
+      name: {
+        value: 'Sodio',
+        synonyms: ['Sodium']
+      }
+    },
+    {
+      id: 12,
+      name: {
+        value: 'Magnesio',
+        synonyms: ['Magnesium']
+      }
+    },
+    {
+      id: 13,
+      name: {
+        value: 'Aluminio',
+        synonyms: ['Aluminium']
+      }
+    },
+    {
+      id: 14,
+      name: {
+        value: 'Silicio',
+        synonyms: ['Silicon']
+      }
+    },
+    {
+      id: 15,
+      name: {
+        value: 'Fósforo',
+        synonyms: ['Phosphorus']
+      }
+    },
+    {
+      id: 16,
+      name: {
+        value: 'Azufre',
+        synonyms: ['Sulfur']
+      }
+    },
+    {
+      id: 17,
+      name: {
+        value: 'Cloro',
+        synonyms: ['Chlorine']
+      }
+    },
+    {
+      id: 18,
+      name: {
+        value: 'Argón',
+        synonyms: ['Argon']
+      }
+    },
+    {
+      id: 19,
+      name: {
+        value: 'Potasio',
+        synonyms: ['Potassium']
+      }
+    },
+    {
+      id: 20,
+      name: {
+        value: 'Calcio',
+        synonyms: ['Calcium']
+      }
+    },
+    {
+      id: 21,
+      name: {
+        value: 'Escandio',
+        synonyms: ['Scandium']
+      }
+    },
+    {
+      id: 22,
+      name: {
+        value: 'Titanio',
+        synonyms: ['Titanium']
+      }
+    },
+    {
+      id: 23,
+      name: {
+        value: 'Vanadio',
+        synonyms: ['Vanadium']
+      }
+    },
+    {
+      id: 24,
+      name: {
+        value: 'Cromo',
+        synonyms: ['Chromium']
+      }
+    },
+    {
+      id: 25,
+      name: {
+        value: 'Manganeso',
+        synonyms: ['Manganese']
+      }
+    },
+    {
+      id: 26,
+      name: {
+        value: 'Hierro',
+        synonyms: ['Iron']
+      }
+    },
+    {
+      id: 27,
+      name: {
+        value: 'Cobalto',
+        synonyms: ['Cobalt']
+      }
+    },
+    {
+      id: 28,
+      name: {
+        value: 'Níquel',
+        synonyms: ['Nickel']
+      }
+    },
+    {
+      id: 29,
+      name: {
+        value: 'Cobre',
+        synonyms: ['Copper']
+      }
+    },
+    {
+      id: 30,
+      name: {
+        value: 'Zinc',
+        synonyms: ['Zinc']
+      }
+    },
+    {
+      id: 31,
+      name: {
+        value: 'Galio',
+        synonyms: ['Gallium']
+      }
+    },
+    {
+      id: 32,
+      name: {
+        value: 'Germanio',
+        synonyms: ['Germanium']
+      }
+    },
+    {
+      id: 33,
+      name: {
+        value: 'Arsénico',
+        synonyms: ['Arsenic']
+      }
+    },
+    {
+      id: 34,
+      name: {
+        value: 'Selenio',
+        synonyms: ['Selenium']
+      }
+    },
+    {
+      id: 35,
+      name: {
+        value: 'Bromo',
+        synonyms: ['Bromine']
+      }
+    },
+    {
+      id: 36,
+      name: {
+        value: 'Kriptón',
+        synonyms: ['Krypton']
+      }
+    },
+    {
+      id: 37,
+      name: {
+        value: 'Rubidio',
+        synonyms: ['Rubidium']
+      }
+    },
+    {
+      id: 38,
+      name: {
+        value: 'Estroncio',
+        synonyms: ['Strontium']
+      }
+    },
+    {
+      id: 39,
+      name: {
+        value: 'Itrio',
+        synonyms: ['Yttrium']
+      }
+    },
+    {
+      id: 40,
+      name: {
+        value: 'Circonio',
+        synonyms: ['Zirconium']
+      }
+    },
+    {
+      id: 41,
+      name: {
+        value: 'Niobio',
+        synonyms: ['Niobium']
+      }
+    },
+    {
+      id: 42,
+      name: {
+        value: 'Molibdeno',
+        synonyms: ['Molybdenum']
+      }
+    },
+    {
+      id: 43,
+      name: {
+        value: 'Tecnecio',
+        synonyms: ['Technetium']
+      }
+    },
+    {
+      id: 44,
+      name: {
+        value: 'Rutenio',
+        synonyms: ['Ruthenium']
+      }
+    },
+    {
+      id: 45,
+      name: {
+        value: 'Rodio',
+        synonyms: ['Rhodium']
+      }
+    },
+    {
+      id: 46,
+      name: {
+        value: 'Paladio',
+        synonyms: ['Palladium']
+      }
+    },
+    {
+      id: 47,
+      name: {
+        value: 'Plata',
+        synonyms: ['Silver']
+      }
+    },
+    {
+      id: 48,
+      name: {
+        value: 'Cadmio',
+        synonyms: ['Cadmium']
+      }
+    },
+    {
+      id: 49,
+      name: {
+        value: 'Indio',
+        synonyms: ['Indium']
+      }
+    },
+    {
+      id: 50,
+      name: {
+        value: 'Estaño',
+        synonyms: ['Tin']
+      }
+    },
+    {
+      id: 51,
+      name: {
+        value: 'Antimonio',
+        synonyms: ['Antimony']
+      }
+    },
+    {
+      id: 52,
+      name: {
+        value: 'Telurio',
+        synonyms: ['Tellurium']
+      }
+    },
+    {
+      id: 53,
+      name: {
+        value: 'Yodo',
+        synonyms: ['Iodine']
+      }
+    },
+    {
+      id: 54,
+      name: {
+        value: 'Xenón',
+        synonyms: ['Xenon']
+      }
+    },
+    {
+      id: 55,
+      name: {
+        value: 'Cesio',
+        synonyms: ['Cesium']
+      }
+    },
+    {
+      id: 56,
+      name: {
+        value: 'Bario',
+        synonyms: ['Barium']
+      }
+    },
+    {
+      id: 57,
+      name: {
+        value: 'Lantano',
+        synonyms: ['Lanthanum']
+      }
+    },
+    {
+      id: 58,
+      name: {
+        value: 'Cerio',
+        synonyms: ['Cerium']
+      }
+    },
+    {
+      id: 59,
+      name: {
+        value: 'Praseodimio',
+        synonyms: ['Praseodymium']
+      }
+    },
+    {
+      id: 60,
+      name: {
+        value: 'Neodimio',
+        synonyms: ['Neodymium']
+      }
+    },
+    {
+      id: 61,
+      name: {
+        value: 'Prometeo',
+        synonyms: ['Promethium']
+      }
+    },
+    {
+      id: 62,
+      name: {
+        value: 'Samario',
+        synonyms: ['Samarium']
+      }
+    },
+    {
+      id: 63,
+      name: {
+        value: 'Europio',
+        synonyms: ['Europium']
+      }
+    },
+    {
+      id: 64,
+      name: {
+        value: 'Gadolinio',
+        synonyms: ['Gadolinium']
+      }
+    },
+    {
+      id: 65,
+      name: {
+        value: 'Terbio',
+        synonyms: ['Terbium']
+      }
+    },
+    {
+      id: 66,
+      name: {
+        value: 'Disprosio',
+        synonyms: ['Dysprosium']
+      }
+    },
+    {
+      id: 67,
+      name: {
+        value: 'Holmio',
+        synonyms: ['Holmium']
+      }
+    },
+    {
+      id: 68,
+      name: {
+        value: 'Erbio',
+        synonyms: ['Erbium']
+      }
+    },
+    {
+      id: 69,
+      name: {
+        value: 'Tulio',
+        synonyms: ['Thulium']
+      }
+    },
+    {
+      id: 70,
+      name: {
+        value: 'Iterbio',
+        synonyms: ['Ytterbium']
+      }
+    },
+    {
+      id: 71,
+      name: {
+        value: 'Lutecio',
+        synonyms: ['Lutetium']
+      }
+    },
+    {
+      id: 72,
+      name: {
+        value: 'Hafnio',
+        synonyms: ['Hafnium']
+      }
+    },
+    {
+      id: 73,
+      name: {
+        value: 'Tantalio',
+        synonyms: ['Tantalum']
+      }
+    },
+    {
+      id: 74,
+      name: {
+        value: 'Tungsteno',
+        synonyms: ['Tungsten']
+      }
+    },
+    {
+      id: 75,
+      name: {
+        value: 'Renio',
+        synonyms: ['Rhenium']
+      }
+    },
+    {
+      id: 76,
+      name: {
+        value: 'Osmio',
+        synonyms: ['Osmium']
+      }
+    },
+    {
+      id: 77,
+      name: {
+        value: 'Iridio',
+        synonyms: ['Iridium']
+      }
+    },
+    {
+      id: 78,
+      name: {
+        value: 'Platino',
+        synonyms: ['Platinum']
+      }
+    },
+    {
+      id: 79,
+      name: {
+        value: 'Oro',
+        synonyms: ['Gold']
+      }
+    },
+    {
+      id: 80,
+      name: {
+        value: 'Mercurio',
+        synonyms: ['Mercury']
+      }
+    },
+    {
+      id: 81,
+      name: {
+        value: 'Talio',
+        synonyms: ['Thallium']
+      }
+    },
+    {
+      id: 82,
+      name: {
+        value: 'Plomo',
+        synonyms: ['Lead']
+      }
+    },
+    {
+      id: 83,
+      name: {
+        value: 'Bismuto',
+        synonyms: ['Bismuth']
+      }
+    },
+    {
+      id: 84,
+      name: {
+        value: 'Polonio',
+        synonyms: ['Polonium']
+      }
+    },
+    {
+      id: 85,
+      name: {
+        value: 'Astato',
+        synonyms: ['Astatine']
+      }
+    },
+    {
+      id: 86,
+      name: {
+        value: 'Radón',
+        synonyms: ['Radon']
+      }
+    },
+    {
+      id: 87,
+      name: {
+        value: 'Francio',
+        synonyms: ['Francium']
+      }
+    },
+    {
+      id: 88,
+      name: {
+        value: 'Radio',
+        synonyms: ['Radium']
+      }
+    },
+    {
+      id: 89,
+      name: {
+        value: 'Actinio',
+        synonyms: ['Actinium']
+      }
+    },
+    {
+      id: 90,
+      name: {
+        value: 'Torio',
+        synonyms: ['Thorium']
+      }
+    },
+    {
+      id: 91,
+      name: {
+        value: 'Protactinio',
+        synonyms: ['Protactinium']
+      }
+    },
+    {
+      id: 92,
+      name: {
+        value: 'Uranio',
+        synonyms: ['Uranium']
+      }
+    },
+    {
+      id: 93,
+      name: {
+        value: 'Neptunio',
+        synonyms: ['Neptunium']
+      }
+    },
+    {
+      id: 94,
+      name: {
+        value: 'Plutonio',
+        synonyms: ['Plutonium']
+      }
+    },
+    {
+      id: 95,
+      name: {
+        value: 'Americio',
+        synonyms: ['Americium']
+      }
+    },
+    {
+      id: 96,
+      name: {
+        value: 'Curio',
+        synonyms: ['Curium']
+      }
+    },
+    {
+      id: 97,
+      name: {
+        value: 'Berkelio',
+        synonyms: ['Berkelium']
+      }
+    },
+    {
+      id: 98,
+      name: {
+        value: 'Californio',
+        synonyms: ['Californium']
+      }
+    },
+    {
+      id: 99,
+      name: {
+        value: 'Einstenio',
+        synonyms: ['Einsteinium']
+      }
+    },
+    {
+      id: 100,
+      name: {
+        value: 'Fermio',
+        synonyms: ['Fermium']
+      }
+    },
+    {
+      id: 101,
+      name: {
+        value: 'Mendelevio',
+        synonyms: ['Mendelevium']
+      }
+    },
+    {
+      id: 102,
+      name: {
+        value: 'Nobelio',
+        synonyms: ['Nobelium']
+      }
+    },
+    {
+      id: 103,
+      name: {
+        value: 'Laurencio',
+        synonyms: ['Lawrencium']
+      }
+    },
+    {
+      id: 104,
+      name: {
+        value: 'Rutherfordio',
+        synonyms: ['Rutherfordium']
+      }
+    },
+    {
+      id: 105,
+      name: {
+        value: 'Dubnio',
+        synonyms: ['Dubnium']
+      }
+    },
+    {
+      id: 106,
+      name: {
+        value: 'Seaborgio',
+        synonyms: ['Seaborgium']
+      }
+    },
+    {
+      id: 107,
+      name: {
+        value: 'Bohrio',
+        synonyms: ['Bohrium']
+      }
+    },
+    {
+      id: 108,
+      name: {
+        value: 'Hassip',
+        synonyms: ['Hassium']
+      }
+    },
+    {
+      id: 109,
+      name: {
+        value: 'Meitnerio',
+        synonyms: ['Meitnerium']
+      }
+    },
+    {
+      id: 110,
+      name: {
+        value: 'Darmstadio',
+        synonyms: ['Darmstadtium']
+      }
+    },
+    {
+      id: 111,
+      name: {
+        value: 'Roentgenio',
+        synonyms: ['Roentgenium']
+      }
+    },
+    {
+      id: 112,
+      name: {
+        value: 'Copernicio',
+        synonyms: ['Copernicium']
+      }
+    },
+    {
+      id: 113,
+      name: {
+        value: 'Nihonio',
+        synonyms: ['Nihonium']
+      }
+    },
+    {
+      id: 114,
+      name: {
+        value: 'Flerovio',
+        synonyms: ['Flerovium']
+      }
+    },
+    {
+      id: 115,
+      name: {
+        value: 'Moscovio',
+        synonyms: ['Moscovium']
+      }
+    },
+    {
+      id: 116,
+      name: {
+        value: 'Livermorio',
+        synonyms: ['Livermorium']
+      }
+    },
+    {
+      id: 117,
+      name: {
+        value: 'Téneso',
+        synonyms: ['Tennessine']
+      }
+    },
+    {
+      id: 118,
+      name: {
+        value: 'Oganesón',
+        synonyms: ['Oganesson']
+      }
+    },
+    {
+      id: 119,
+      name: {
+        value: 'Ununennio',
+        synonyms: ['Ununennium']
+      }
+    }
+  ]
+};
